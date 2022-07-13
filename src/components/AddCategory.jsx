@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import searchImg from "../assets/search-icon.svg";
 
 const AddCategory = ({ onNewCategory }) => {
   const [inputValue, setInputValue] = useState("");
@@ -28,11 +29,7 @@ const AddCategory = ({ onNewCategory }) => {
           onChange={handleChange}
         />
         <button type="submit" className="btn text-white w-1/12">
-          <img
-            src="../../assets/search-icon.svg"
-            alt="search"
-            className="btn2 p-[9px] "
-          />
+          <img src={searchImg} alt="search" className="btn2 p-[9px] " />
         </button>
       </form>
     </div>
